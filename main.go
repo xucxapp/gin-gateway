@@ -15,6 +15,5 @@ func main() {
 	if err := server.LoadConfig(*configFile); err != nil {
 		panic(err)
 	}
-	// defer server.Stop()
 	server.Start()
 }
